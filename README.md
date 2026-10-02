@@ -23,6 +23,18 @@
 
 安装后打开 设置 → 鲸鱼图标替换,添加图标即可生效。
 
+## 网页端(dsh web)
+
+插件与 profile 无关,网页端同样可用,装入 web profile 即可:
+
+```bash
+dsh plugin --profile web add https://github.com/EricEricEr/dsh-whale-swap
+# 然后重启 dsh web
+```
+
+桌面端与网页端共用 `$DSH_HOME` 下的配置(`$DSH_HOME/whale-swap/config.json`),
+所以两端的图标库和开关状态自动同步,只需上传一次。
+
 ## 配置文档
 
 ```json
