@@ -1,0 +1,59 @@
+{
+  "name": "dsh-whale-swap",
+  "version": "0.1.0",
+  "author": "EricEricEr",
+  "description": "替换 DeepSeek Harness 会话框上方的鲸鱼 Logo:自带图标库,可上传/URL 添加、点选切换,设置页直接管理,升级不丢配置。",
+  "type": "module",
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "config.example.json",
+    "README.md",
+    "README_ZH.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "plugin",
+    "ui",
+    "logo",
+    "icon",
+    "whale"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EricEricEr/dsh-whale-swap.git"
+  },
+  "homepage": "https://github.com/EricEricEr/dsh-whale-swap#readme",
+  "bugs": {
+    "url": "https://github.com/EricEricEr/dsh-whale-swap/issues"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "license": "MIT"
+}
