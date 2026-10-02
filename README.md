@@ -16,10 +16,11 @@
 在 DeepSeek Harness 的「添加插件」对话框中输入以下任意一种:
 
 - 本仓库的 GitHub 地址:`https://github.com/EricEricEr/dsh-whale-swap`
-- 或 npm 包名:`dsh-whale-swap`
 - 或克隆到本地后填本地目录路径
 
-也可以用 CLI:`dsh plugin add dsh-whale-swap`
+也可以用 CLI:`dsh plugin add https://github.com/EricEricEr/dsh-whale-swap`
+
+> 注:尚未发布到 npm,暂不支持按包名安装。
 
 安装后打开 设置 → 鲸鱼图标替换,添加图标即可生效。
 
